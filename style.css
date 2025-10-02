@@ -1,0 +1,155 @@
+body{
+    padding : 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #f0f2f5, #e3e6ea);
+}
+
+
+
+
+.nav{
+    text-align: center;
+    font-size: 18px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav li {
+    
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px;
+   
+    
+    
+}
+
+.containerCentral{
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+     
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(68, 81, 100);
+}
+
+.divForm{
+ margin-top: 20%;
+   
+
+     
+       
+}
+.titleCadastro{
+    color: #0f2027;
+   
+          
+}
+
+ .titleList{
+    color: rgb(107, 105, 105);
+    text-align: center;
+ }
+
+
+ .titleInicio{
+    color: rgb(107, 105, 105);
+    text-align: center;
+    font-size: 38px;
+    margin-top: 10%;
+    
+ }
+
+ .paragHome{
+     font-size: 25px;
+     text-align: center;
+ }
+
+.divForm input {
+    margin-bottom: 5%;    
+    padding: 5px;
+    width: 350%;
+    border-radius: 8px ;
+     
+}
+
+.divForm label  {
+    font-weight: bold;
+    display : inline-block;
+    width: 100px;
+}
+
+ .btnAdd {
+    background-color:#2c5364;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+ }
+
+ .btnAdd:hover{
+       background-color:#3a6b82;;
+ }
+ 
+
+ select{       
+    width: 363%; 
+    padding:5px ;    
+    border-radius: 8px ;
+ }
+
+
+ footer {
+      position: fixed;
+      bottom: 0;      
+      width: 100%;
+      padding: 1px;
+     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+ }
+
+ footer p{
+    color: white;
+    text-align: center;
+ }
+
+ 
+
+ @media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;                
+        width: 100%;
+    }
+
+    .nav li {
+        padding: 7px;        
+        text-align: center;
+    }
+
+    form.meuForm {
+        padding: 15px;
+    }
+
+    .titleCadatro {
+        font-size: 22px;
+    }
+
+    .btnAdd {
+        width: 90%;
+    }
+
+    .divForm label{
+        width: 25%;
+    }
+}

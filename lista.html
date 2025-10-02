@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lista.css">
+
+  <title>Lista de Compras</title>
+</head>
+
+<body>
+   
+ <nav>
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cadastro.html">Cadastro de produtos</a></li>
+            <li><a href="lista.html" >Lista de produtos</a></li>
+        </ul>
+    </nav>
+
+    
+  <div class="divbtn">
+  <button id="ordenarValidade">Ordenar por Validade</button>
+  <button id="buscarProduto">Buscar Produto</button>
+</div>
+
+ 
+  <table id="tabelaProdutos">
+    <thead>
+      <tr>
+        <th >Nome</th>
+        <th >Preço</th>
+        <th >Categoria</th>
+        <th >Origem</th>
+        <th >Lote</th>
+        <th >Validade</th>
+        <th >Ações</th>
+      </tr>
+    </thead>
+    <tbody id="corpoTabela">
+      
+    </tbody>
+  </table>
+ 
+
+<footer><p>&copy; 2025 | Sistema de CRUD de Produtos</p></footer>
+
+     <script src="lista.js"></script>
+</body>
+
+</html>

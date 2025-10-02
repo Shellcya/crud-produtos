@@ -1,0 +1,115 @@
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 15px;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      cursor: pointer;
+      
+    }
+    th {
+      background: #f2f2f2;
+    }
+    #busca {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 300px;
+    }
+    button {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .divbtn{
+       margin: 20px;
+    }
+
+    .btnEditar{
+      background-color: rgb(146, 119, 44);
+      color: white;
+      border-radius: 5px;
+    }
+
+    .btnExcluir{
+        background-color: rgb(158, 67, 67);
+        color: white;
+        border-radius: 5px;
+    }
+
+    #ordenarValidade, #buscarProduto{
+        background: rgb(9, 55, 85);
+        color: white;
+        border-radius: 5px;
+        padding: 4px;
+
+   }
+@media (max-width: 768px) {
+   
+  table thead {
+    display: none;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+    
+  }
+
+  table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  table td {
+    text-align: left;
+    padding: 8px;
+    position: relative;
+    padding-left: 50%;
+    box-sizing: border-box;
+  }
+
+  table td::before {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333;
+  }
+
+  table td:nth-child(1)::before { content: "Nome"; }
+  table td:nth-child(2)::before { content: "Preço"; }
+  table td:nth-child(3)::before { content: "Categoria"; }
+  table td:nth-child(4)::before { content: "Origem"; }
+  table td:nth-child(5)::before { content: "Lote"; }
+  table td:nth-child(6)::before { content: "Validade"; }
+  table td:nth-child(7)::before { content: "Ações"; }
+
+   
+  .btnEditar, .btnExcluir {
+    width: 70%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #ordenarValidade, #buscarProduto {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+ #tabelaProdutos {
+  margin-bottom: 60px;  
+}
+
+footer{
+  position: relative;
+}
+}

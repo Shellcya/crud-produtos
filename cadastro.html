@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de compras</title>
+</head>
+<body>
+        <nav>
+        <ul class="nav">
+            <li><a href="index.html" >Inicio</a></li>
+            <li><a href="cadastro.html" >Cadastro de produtos</a></li>
+            <li><a href="lista.html" >Lista de produtos</a></li>
+        </ul>
+    </nav>
+<main class="containerCentral"> 
+    <form id="Form" class="meuForm">
+       <h1 class="titleCadastro">Cadastre seu Produto</h1>
+
+
+      <div class="divForm">
+
+        <label>Nome: <input type="text" id="nome" placeholder="Informe o nome do produto"required></label><br>
+        <label>Preço: <input type="number" id="preco" placeholder="R$0.00" step="0.01" min="0"></label><br>
+       <label>Categoria:
+  <select id="categoria" required>
+    <option value="" disabled selected>Selecione a categoria</option>
+    <option value="alimentos">Alimentos</option>
+    <option value="bebidas">Bebidas</option>
+    <option value="eletronicos">Eletrônicos</option>
+    <option value="limpeza">Produtos de Limpeza</option>
+    <option value="vestuario">Vestuário</option>
+    <option value="outros">Outros</option>
+  </select>
+</label><br>
+
+<label>Origem:
+  <select id="origem" required>
+    <option value="" disabled selected>Selecione a origem</option>
+    <option value="nacional">Nacional</option>
+    <option value="importado">Importado</option>
+    <option value="regional">Regional</option>
+  </select>
+</label><br>
+
+        <label>Lote: <input type="date" id="lote" required></label><br>
+        <label>Validade: <input type="date" id="validade" required></label><br>
+
+        <button id="btAdd" class="btnAdd">Adicionar</button>
+
+      </div>
+
+   </form>
+
+</main> 
+ <footer><p>&copy; 2025 | Sistema de CRUD de Produtos</p></footer>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
